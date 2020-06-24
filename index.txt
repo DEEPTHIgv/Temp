@@ -1,1 +1,16 @@
+		Version Control System
 
+Version Control System is also called Revision Control System or Source Code 
+Management.
+It is system of  storing projects (repositories) online along with histrory of every 
+change made. Multiple people can pull the project to their personal systems and
+work on the repository simultaniously and update the changes on the online 
+platform. If some some changes were made to the repository by another colaborator 
+by the time then the VCS does not let the changes get updated and asks the user to 
+pull the collaborator's updates first and then update one's changes. This makes it the 
+best platform to collaborate.
+Another big advantage of  VCS is one can edit a repository without disturbing the 
+main repository till the the editing is complete by branching the repository. Multiple 
+branches can be made at a time.
+GIT is an example of  VCS. Since it is open sourced, other's work can be used as the 
+basis of one's work.
