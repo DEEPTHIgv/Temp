@@ -1,8 +1,28 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<h1>Semester VIII Courses</h1>
 <style>
+body{
+	background-image: url("a.jpg");
+	}
+ul.n{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	}
+h1{
+	padding: 100px;
+	}
+ul.a{
+	list-style-type:square;
+	}
+ul.b{
+	list-style-type:circle;
+	}
+ul li{
+	color:red;
+	display:none;
+	}
 a:link{
 	color:red;
 	}
@@ -10,7 +30,7 @@ a:visited{
 	color:green;
 	}
 a:hover{
-	color:yellow;
+	color:violet;
 	}
 a:active{
 	color:orange;
@@ -18,39 +38,45 @@ a:active{
 </style>
 </head>
 <body>
+<ul class="n">
+	<li><a href="Courses.html">Home</a></li>
+	<li><a href="about_me.html">About me</a></li>
+	<li><a href="Registration.html">Registration</a></li>
+</ul>
+<h1>Semester VIII Courses</h1>
   <ol>
     <li>Mathematical Methods
-	<ul>
+	<ul class="a">
 		<li>Complex Analysis</li>
 		<li>Group Theory</li>
 	</ul>
     </li>
     <li>Quantum Mechanics
-	<ul>
+	<ul class="b">
 		<li>Perturbation Theory</li>
 		<li>Helium Atom</li>
 	</ul>
     </li>
     <li>Electrodynamics
-	<ul>
+	<ul class="a">
 		<li>Magnetism</li>
 		<li>EMT Waves</li>
 	</ul>
     </li>
     <li>Digital Electronics
-	<ul>
+	<ul class="b">
 		<li>Sequential Circuits</li>
 		<li>Non-Sequential Circuits</li>
 	</ul>
     </li>
     <li>Numerical Methods
-	<ul>
+	<ul class="a">
 		<li>Introduction to Fortron</li>
 		<li>Numerical Methods</li>
 	</ul>
     </li>
     <li>Modern Physics Lab
-	<ul>
+	<ul class="b">
 		<li>Light Based Experiments</li>
 		<li>Heat Based Experiments</li>
 	</ul>
