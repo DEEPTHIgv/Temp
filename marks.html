@@ -25,20 +25,46 @@ tr:nth-child(even){
   <table style="width:50%" border=1px>
   <tr class="title">
     <th>Subject</th>
-    <th>Grade</th> 
+    <th>marks</th> 
   </tr>
   <tr>
     <td>Optics</td>
-    <td>B+</td>
+    <td id="optics_marks"></td>
   </tr>
   <tr>
     <td>Quantum Mechanics</td>
-    <td>A</td>
+    <td id="quantum_marks"></td>
   </tr>
   <tr>
     <td>Clasical Mechanics</td>
-    <td>A</td>
+    <td id="classical_marks"></td>
+  </tr>
+  <tr class="title">
+    <td>Total marks</td>
+    <td id="total"></td> 
+  </tr>
+  <tr class="title">
+    <td>Average marks</td>
+    <td id="avg"></td> 
   </tr>
 </table>
+<script>
+  var o=67;
+  document.getElementById("optics_marks").innerHTML =o;
+
+  var q=75;
+  document.getElementById("quantum_marks").innerHTML =q;
+
+  var c=75;
+  document.getElementById("classical_marks").innerHTML =c;
+
+function t(c,q,o){
+	return c+q+o;
+	}
+a=t(c,q,o)/3;
+
+  document.getElementById("total").innerHTML =t(c,q,o);
+  document.getElementById("avg").innerHTML =a;
+</script>
 </body>
 </html>

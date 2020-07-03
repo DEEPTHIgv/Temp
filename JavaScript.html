@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<h1>First time with JavaScript?</h1>
+<p>JavaScript is a programming language. It is most popular among Web Developers since it makes web pages Dynamic</p>
+<p>the following text is the value saved in variables x and y-<p>
+<p id="test"></p><br>
+<h3>Task-2</h3><br>
+<p>Type casting by indexing an element of an array<p>
+<p id="type"></p>
+<h3>Task-3: Predefined Math Functions</h3><br>
+random number(say r and n)-<p id="rand"></p>
+r^n-<p id="power"></p>
+root r-<p id="root"></p>
+|r|=<p id="abs"></p>
+ceil(r)=<p id="ceil"></p>
+floor(r)=<p id="floor"></p>
+sin(r)=<p id="sin"></p>
+<script>
+var x = "It's my first time too!";
+var y = "wish me luck!";
+document.getElementById("test").innerHTML =x+"<br>"+y;
+var a=[1,2,3,4,5];
+var t=" "+a[3];
+document.getElementById("type").innerHTML =t+" of type "+typeof t;
+r=Math.random();
+n=Math.random();
+document.getElementById("rand").innerHTML=r+" & "+n;
+document.getElementById("power").innerHTML =Math.pow(r,n);
+document.getElementById("root").innerHTML =Math.sqrt(r);
+document.getElementById("abs").innerHTML =Math.abs(r);
+document.getElementById("ceil").innerHTML =Math.ceil(r);
+document.getElementById("floor").innerHTML =Math.floor(r);
+document.getElementById("sin").innerHTML =Math.sin(r);
+</script>
+</body>
+</html>

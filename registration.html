@@ -13,18 +13,30 @@
  </head>	
 <body>
 <center><h1>Registration Form</h1></center>
-	<form action="action-page.html">
-		<lable>Full Name: </lable><input type="text"><br>
-		<lable>Phone Number: </lable><input type="number"><br>
+	<form name="adm" action="action-page.html" onsubmit="return validateForm()">
+		<lable>Full Name: </lable><input type="text" required><br>
+		<lable>Phone Number: </lable><input type="number" required><br>
 
 		<lable>Do you want to join</lable><br>
 		<input type="radio" name="join"><lable>Bachelors</lable><br>
 		<input type="radio" name="join"><lable>Masters</lable><br>
-		<lable>Description: </lable><input type="text"><br>
+		<lable>Description: </lable><input type="text" required><br>
 		<lable>Select your interests</lable><br>
-			<input type="checkbox"><lable>Mathematical Methods</lable><br>
-			<input type="checkbox"><lable>Quantum Mechanics</lable><br>
-		<input type="submit" class="button" >
+			<input type="checkbox" name="i" value="mm"><lable>Mathematical Methods</lable><br>
+			<input type="checkbox" name="i" value="qm"><lable>Quantum Mechanics</lable><br>
+		<input type="submit" class="button" value="submit">
 	</form>
+<script>
+function validateForm() {
+  var x = document.forms["adm"]["join"].value;
+  if (x == "") {
+    alert("Select the course");
+ var y = document.forms["adm"]["i"].value;
+  if (y == "") {
+    alert("Select interest");
+    return false;
+  }
+}
+</script>
 </body>
 </html>
