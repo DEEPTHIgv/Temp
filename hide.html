@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>hide and display buttons</title>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+
+<button id="show">Show</button> 
+<button id="hide">Hide</button>
+
+<p>
+test script
+</p>
+ 
+<script>
+$( "#hide" ).click(function() {
+  $( "p" ).hide( "fast", function() {
+    $( this ).prev().hide( "fast", arguments.callee );
+  });
+});
+$( "#show" ).click(function() {
+  $( "p" ).show( );
+});
+</script>
+ 
+</body>
+</html>
