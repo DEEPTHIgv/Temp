@@ -1,0 +1,24 @@
+<html>
+<body>
+Let the input value be: 11
+<p id="f"><p>
+Now, let the input value be: 101
+<p id="s"><p>
+<script>
+function from10to100(n){
+	if (n>=10 &&n<=100){
+		var text="lies in [10,100]";
+		return text;
+		}
+	else{
+		var text="does not lies in [10,100]";
+		return text;
+		}
+	}
+var n=11;
+ document.getElementById("f").innerHTML =from10to100(n);
+n=101;
+ document.getElementById("s").innerHTML =from10to100(n);
+</script>
+</body>
+</html>
