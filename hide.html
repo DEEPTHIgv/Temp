@@ -5,22 +5,29 @@
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
+<button id="toggle">toggle</button> 
 
-<button id="show">Show</button> 
-<button id="hide">Hide</button>
-
-<p>
+<p id="f">
 test script
 </p>
- 
+<br>
+ <button id="d">double click to fade out</button>
+ <button id="c">click to fade in</button>
+<p id="s">
+test script
+</p>
+
 <script>
-$( "#hide" ).click(function() {
-  $( "p" ).hide( "fast", function() {
-    $( this ).prev().hide( "fast", arguments.callee );
-  });
+$( "#toggle" ).click(function() {
+  $( "#f" ).toggle( );
 });
-$( "#show" ).click(function() {
-  $( "p" ).show( );
+
+$( "#d" ).dblclick(function() {
+  $( "#s" ).fadeOut( );
+});
+
+$( "#c" ).click(function() {
+  $( "#s" ).fadeIn( );
 });
 </script>
  
